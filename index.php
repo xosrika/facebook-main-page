@@ -177,12 +177,12 @@
 			list-style: none;
 		}
 		#left-column il{
-					
+			
 		}
 		
 		.left-label{
 			color: #A9A9A9;
-			margin-top: 30px;
+			margin-top: 20px !important;
 			clear: both;
 			float: left;
 		}
@@ -191,9 +191,22 @@
 			list-style-type: none;
 		}
 
-		/* #create{
-			list-style-type: circle !important;
-		}		 */
+		#create{
+			clear: both; 
+		}
+		#create li{
+			font-size: 3px;			
+			color: blue;
+			float: left;
+			list-style-type: circle;
+		}
+		#create li:first-child {
+			list-style-type: none;
+		}
+		#create li a{
+			font-size: 15px;
+			float: left;
+		}		
 	
 		
 	</style>
@@ -264,12 +277,12 @@
 
 			<a class="left-label">CREATE</a>
 
-			<ul style="clear: both; color: blue;" id="create">				
+			<ul id="create" class="group">				
 				
-				<li> <a>Ad</a></li>
-				<li> <a>Page</a></li>
-				<li> <a>Group</a></li>
-				<li> <a>Event</a></li>
+				<li class="group"> <a>Ad</a></li>
+				<li class="group"> <a>Page</a></li>
+				<li class="group"> <a>Group</a></li>
+				<li class="group"> <a>Event</a></li>
 				
 			</ul> <!-- create -->
 
