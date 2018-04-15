@@ -3,6 +3,7 @@
 <html lang="en-US">
   <head>
 	<style>
+				
 		.group:after {
 		  content: "";
 		  display: table;
@@ -135,7 +136,8 @@
 
 		#user-content{
 			float: left;
-			margin-bottom: 10px; 
+			width: 100%;			
+			border-radius: 4px;
 		}
 
 		#news-feed{
@@ -161,15 +163,19 @@
 			border-radius: 2px;
 		}
 
-		#left-column a{
+		#left-column spam{
 			margin: 2px;
 			margin-right: 2px;
 			margin-top: 7px;
 			margin-bottom: 7px;
 			float: left;
-			height: 14px;			
-			text-align: center;	
+			height: 14px;	
+			width: 80%;		
+			text-align: left;	
 				
+		}
+		#left-column a:hover {
+			background-color: white;
 		}	
 
 		#left-column ul{
@@ -214,6 +220,7 @@
 		
 		.left_list_elem{
 			font-size: 14px;
+			float: left;
 		}
 
 		#middle-column{
@@ -246,7 +253,7 @@
 			float: left;
 			width: 50px;
 			border-radius: 25px;
-			margin: 5px;
+			
 			margin-bottom: 60px;
 		}
 
@@ -279,10 +286,13 @@
 			text-align: center;					
 		}	
 		#main-form{
+			padding: 5px;
 			clear: both;
 			border: 0px;
 			border-radius: 4px;
 			border-bottom: 1px;
+			border-left: 1px;
+			border-right: 1px;
 			border-style: solid;
 			border-color: #b3b3b3;
 		}
@@ -302,6 +312,40 @@
 			border-style: solid;
 			border-color: #b3b3b3;
 		}		
+		hr { 
+			display: block;
+			margin-top: 0.5em;
+			margin-bottom: 0.5em;
+			margin-left: auto;
+			margin-right: auto;
+			border-style: inset;
+			border-width: 1px;
+			clear: both;
+		} 
+		.form-bottom{
+			float:left; 
+			background: white;
+			float: left;
+			border-radius: 10px;
+			padding-left: 10px;
+			background: #f5f5f0;
+			margin-right: 5px;
+			color: grey;
+			margin-bottom: 10px;
+		}
+
+		.form-bottom spam{
+			display: block;
+			width: 160px;
+			margin-top: 6px; 
+			margin-bottom: 6px; 
+		}
+
+		#main-form-button{
+			background: blue; 
+			float: right;"
+			
+		}
 	</style>
     <meta charset="utf-8">
 		<meta name="author" content="Giorgi Khosroshvili">
@@ -321,7 +365,7 @@
 			<img id="messages" src="messages.png">
 			<img id="friend-req" src="friends.jpg">
 			<a text-align="center">Home</a>	
-			<a text-align="center">Alfred</a>			
+			<a text-align="center" href="index.php">Alfred</a>			
 			<img id="person" src="person.jpg">
 			
 		</div> <!-- #right-bar -->
@@ -332,43 +376,44 @@
 
 		<div id="left-column" class="group">
 
-			<div id="user-content" class="group">
+			
+			<div id="user-content" class="group" style="margin-bottom: 10px">
 				<img class="left-column-picture" src="person.jpg">
-				<a class="left_list_elem">Alfred Lua</a>
+				<spam style="float: left;">Alfred Lua</spam>
 			</div> <!-- #user column -->
 
 			<div id="news-feed">
 				<img class="left-column-picture" src="news-feed.jpeg">
-				<a style="float: left;" class="left_list_elem"><b>News Feed</b></a>
+				<spam style="float: left;" class="left_list_elem"><b>News Feed</b></spam>
 			</div> <!-- #news feed -->
 
 			<div id="left-messages">
 				<img class="left-column-picture" src="messages-left.jpg">
-				<a style="float: left;" class="left_list_elem">Messages</a>
+				<spam style="float: left;" class="left_list_elem">Messages</spam>
 			</div><!-- #left messages -->
 
-			<a class="left-label">SHORTCUTS</a>
+			<spam class="left-label">SHORTCUTS</spam>
 
 
 			<ul>				
-				<li style="clear: both;"><img class="left-column-picture" src="group.png"> <a class="left_list_elem">OS group</a></li>
-				<li style="clear: both;"><img class="left-column-picture" src="group.png"> <a class="left_list_elem">Frontend Stuff</a></li>
-				<li style="clear: both;"><img class="left-column-picture" src="group.png"> <a class="left_list_elem">Korkot Mishvele</a></li>
+				<li style="clear: both;"><img class="left-column-picture" src="group.png"> <spam class="left_list_elem">OS group</spam></li>
+				<li style="clear: both;"><img class="left-column-picture" src="group.png"> <spam class="left_list_elem">Frontend Stuff</spam></li>
+				<li style="clear: both;"><img class="left-column-picture" src="group.png"> <spam class="left_list_elem">Korkot Mishvele</spam></li>
 			</ul> <!-- shortcuts -->
 
 			
-			<a class="left-label">EXPLORE</a>
+			<spam class="left-label">EXPLORE</spam>
 
 			<ul>				
 				
-				<li style="clear: both;"><img class="left-column-picture" src="pages.jpg"> <a class="left_list_elem">Pages</a></li>
-				<li style="clear: both;"><img class="left-column-picture" src="group.png"> <a class="left_list_elem">Groups</a></li>
-				<li style="clear: both;"><img class="left-column-picture" src="events.png"> <a class="left_list_elem">Events</a></li>
-				<li style="clear: both;"><img class="left-column-picture" src="friends-list.jpg"> <a class="left_list_elem">Friends List</a></li>
-				<li style="clear: both;"><img class="left-column-picture" src="dropdown.png"> <a style="color: blue;" class="left_list_elem">See More...</a></li>
+				<li style="clear: both;"><img class="left-column-picture" src="pages.jpg"> <spam class="left_list_elem">Pages</spam></li>
+				<li style="clear: both;"><img class="left-column-picture" src="group.png"> <spam class="left_list_elem">Groups</spam></li>
+				<li style="clear: both;"><img class="left-column-picture" src="events.png"> <spam class="left_list_elem">Events</spam></li>
+				<li style="clear: both;"><img class="left-column-picture" src="friends-list.jpg"> <spam class="left_list_elem">Friends List</spam></li>
+				<li style="clear: both;"><img class="left-column-picture" src="dropdown.png"> <spam style="color: blue;" class="left_list_elem">See More...</spam></li>
 			</ul> <!-- explore -->
 
-			<a class="left-label">CREATE</a>
+			<spam class="left-label">CREATE</spam>
 
 			<ul id="create" class="group">				
 				
@@ -384,18 +429,36 @@
 
 		<div id="middle-column" class="group">
 			<form id="post-form" class="group">
-				<ul class="group">
+				<ul class="group" style="background: #f5f5f0;">
 					
-					<li style="float:left;"><img class="middle-column-picture" src="create-page.png"> <a class="middle_list_elem">Create a Post</a></li>
+					<li style="float:left; background: white;"><img class="middle-column-picture" src="create-page.png"> <a class="middle_list_elem">Create a Post</a></li>
 					<li style="float:left;"><img class="middle-column-picture" src="album.png"> <a class="middle_list_elem">Photo/Video Album</a></li>
 				</ul>	
 
-				<div id="main-form">
+				<div id="main-form" class="group">
 					<img id="form-img" src="person.jpg">
 
 					<textarea>What's on your mind?</textarea>
-				</div>
+				
+
+					<hr>
+					
+					<spam class="form-bottom"><img class="middle-column-picture" src="camera.png"> 
+						<spam class="middle_list_elem">Photo/Video</spam>
+					</spam>
+					<spam class="form-bottom"><img class="middle-column-picture" src="smile.png"> 
+						<spam class="middle_list_elem">Emotion</spam>
+					</spam>
+
+					<hr>
+
+					<button id="main-form-button">Post</button>
+				<div>
+
+
 			</form>
+
+
 
 
 		</div> <!-- #middle-column -->
