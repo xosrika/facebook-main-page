@@ -124,6 +124,7 @@
 			margin-left: 95px;
 			padding: 5px;
 			width: 15%;
+			float: left;
 		}
 
 		#content{
@@ -167,7 +168,8 @@
 			margin-bottom: 7px;
 			float: left;
 			height: 14px;			
-			text-align: center;			
+			text-align: center;	
+				
 		}	
 
 		#left-column ul{
@@ -176,19 +178,21 @@
 			border: 0px; 
 			list-style: none;
 		}
-		#left-column il{
-			
-		}
+		
 		
 		.left-label{
 			color: #A9A9A9;
 			margin-top: 20px !important;
 			clear: both;
 			float: left;
+			font-size: 14px;
 		}
 
 		ul{
 			list-style-type: none;
+			margin: 0px;
+			padding: 0px;
+			border: 0px;
 		}
 
 		#create{
@@ -204,11 +208,100 @@
 			list-style-type: none;
 		}
 		#create li a{
-			font-size: 15px;
+			font-size: 13px;
 			float: left;
 		}		
-	
 		
+		.left_list_elem{
+			font-size: 14px;
+		}
+
+		#middle-column{
+			
+			margin-left: 5px;
+			margin-top: 0px;
+			width: 40%;
+			
+			float: left;
+		}
+
+		#post-form{
+			background: white;
+			border: 1px;
+			border-color: #f2f2f2;
+			width: 100%;
+			border-radius: 4px;
+		}
+		#post-form textarea{
+			width: 80%;
+			border-color: white;
+			height: 105px;
+			padding: 5px;
+			color: grey;
+			
+		}
+
+		#form-img{
+			height:100%;
+			float: left;
+			width: 50px;
+			border-radius: 25px;
+			margin: 5px;
+			margin-bottom: 60px;
+		}
+
+		.middle-column-picture{
+			margin: 2px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			float: left;
+			height: 20px;
+			width: 20px;
+			border-radius: 2px;
+		}
+
+		/* a.middle_list_elem{
+			margin-top: 5px
+			margin-bottom: 5px !important;
+			
+			font-size: 15px;
+			height: 20px;
+			
+		} */
+
+		#middle-column a{
+			margin: 2px;
+			margin-right: 2px;
+			margin-top: 7px;
+			margin-bottom: 7px;
+			float: left;
+			height: 14px;			
+			text-align: center;					
+		}	
+		#main-form{
+			clear: both;
+			border: 0px;
+			border-radius: 4px;
+			border-bottom: 1px;
+			border-style: solid;
+			border-color: #b3b3b3;
+		}
+		
+		#post-form li{
+			padding: 4px;
+			border: 0px;
+			border-right: 1px;
+			border-color: #b3c6ff;
+			color: #0040ff; 		
+		}
+
+		#post-form ul{
+			padding: 2px;
+			border: 1px;
+			border-radius: 4px;
+			border-style: solid;
+			border-color: #b3b3b3;
+		}		
 	</style>
     <meta charset="utf-8">
 		<meta name="author" content="Giorgi Khosroshvili">
@@ -241,26 +334,26 @@
 
 			<div id="user-content" class="group">
 				<img class="left-column-picture" src="person.jpg">
-				<a>Alfred Lua</a>
+				<a class="left_list_elem">Alfred Lua</a>
 			</div> <!-- #user column -->
 
 			<div id="news-feed">
 				<img class="left-column-picture" src="news-feed.jpeg">
-				<a style="float: left;">News Feed</a>
+				<a style="float: left;" class="left_list_elem"><b>News Feed</b></a>
 			</div> <!-- #news feed -->
 
 			<div id="left-messages">
 				<img class="left-column-picture" src="messages-left.jpg">
-				<a style="float: left;">Messages</a>
+				<a style="float: left;" class="left_list_elem">Messages</a>
 			</div><!-- #left messages -->
 
 			<a class="left-label">SHORTCUTS</a>
 
 
 			<ul>				
-				<li style="clear: both;"><img class="left-column-picture" src="group.png"> <a>OS group</a></li>
-				<li style="clear: both;"><img class="left-column-picture" src="group.png"> <a>Frontend Stuff</a></li>
-				<li style="clear: both;"><img class="left-column-picture" src="group.png"> <a>Korkot Mishvele</a></li>
+				<li style="clear: both;"><img class="left-column-picture" src="group.png"> <a class="left_list_elem">OS group</a></li>
+				<li style="clear: both;"><img class="left-column-picture" src="group.png"> <a class="left_list_elem">Frontend Stuff</a></li>
+				<li style="clear: both;"><img class="left-column-picture" src="group.png"> <a class="left_list_elem">Korkot Mishvele</a></li>
 			</ul> <!-- shortcuts -->
 
 			
@@ -268,11 +361,11 @@
 
 			<ul>				
 				
-				<li style="clear: both;"><img class="left-column-picture" src="pages.jpg"> <a>Pages</a></li>
-				<li style="clear: both;"><img class="left-column-picture" src="group.png"> <a>Groups</a></li>
-				<li style="clear: both;"><img class="left-column-picture" src="events.png"> <a>Events</a></li>
-				<li style="clear: both;"><img class="left-column-picture" src="friends-list.jpg"> <a>Friends List</a></li>
-				<li style="clear: both;"><img class="left-column-picture" src="dropdown.png"> <a style="color: blue;">See More...</a></li>
+				<li style="clear: both;"><img class="left-column-picture" src="pages.jpg"> <a class="left_list_elem">Pages</a></li>
+				<li style="clear: both;"><img class="left-column-picture" src="group.png"> <a class="left_list_elem">Groups</a></li>
+				<li style="clear: both;"><img class="left-column-picture" src="events.png"> <a class="left_list_elem">Events</a></li>
+				<li style="clear: both;"><img class="left-column-picture" src="friends-list.jpg"> <a class="left_list_elem">Friends List</a></li>
+				<li style="clear: both;"><img class="left-column-picture" src="dropdown.png"> <a style="color: blue;" class="left_list_elem">See More...</a></li>
 			</ul> <!-- explore -->
 
 			<a class="left-label">CREATE</a>
@@ -290,6 +383,20 @@
 		</div> <!-- #left-column -->
 
 		<div id="middle-column" class="group">
+			<form id="post-form" class="group">
+				<ul class="group">
+					
+					<li style="float:left;"><img class="middle-column-picture" src="create-page.png"> <a class="middle_list_elem">Create a Post</a></li>
+					<li style="float:left;"><img class="middle-column-picture" src="album.png"> <a class="middle_list_elem">Photo/Video Album</a></li>
+				</ul>	
+
+				<div id="main-form">
+					<img id="form-img" src="person.jpg">
+
+					<textarea>What's on your mind?</textarea>
+				</div>
+			</form>
+
 
 		</div> <!-- #middle-column -->
 
