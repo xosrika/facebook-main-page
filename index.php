@@ -175,7 +175,7 @@
 				
 		}
 		#left-column a:hover {
-			background-color: white;
+			background-color: white !important;
 		}	
 
 		#left-column ul{
@@ -221,6 +221,14 @@
 		.left_list_elem{
 			font-size: 14px;
 			float: left;
+		}
+
+		#left-column ul li div{
+			height: 30px;
+			border-radius: 5px;
+		}
+		#left-column ul li div:hover{
+			background: white;
 		}
 
 		#middle-column{
@@ -343,9 +351,9 @@
 
 		#main-form-button{
 			background: blue; 
-			float: right;"
-			
+			float: right;			
 		}
+		
 	</style>
     <meta charset="utf-8">
 		<meta name="author" content="Giorgi Khosroshvili">
@@ -396,22 +404,62 @@
 
 
 			<ul>				
-				<li style="clear: both;"><img class="left-column-picture" src="group.png"> <spam class="left_list_elem">OS group</spam></li>
-				<li style="clear: both;"><img class="left-column-picture" src="group.png"> <spam class="left_list_elem">Frontend Stuff</spam></li>
-				<li style="clear: both;"><img class="left-column-picture" src="group.png"> <spam class="left_list_elem">Korkot Mishvele</spam></li>
-			</ul> <!-- shortcuts -->
+				<li style="clear: both;">
+					<div>
+						<img class="left-column-picture" src="group.png"> 
+						<spam class="left_list_elem">OS group</spam>
+					</div>
+				</li>
+				<li style="clear: both;">
+					<div>
+						<img class="left-column-picture" src="group.png">
+						<spam class="left_list_elem">Frontend Stuff</spam>
+					</div>
+				</li>
+				<li style="clear: both;">
+					<div>
+						<img class="left-column-picture" src="group.png"> 
+						<spam class="left_list_elem">Korkot Mishvele</spam>
+					</div>
+				</li>
+			</ul> <!-- #shortcuts -->
 
 			
 			<spam class="left-label">EXPLORE</spam>
 
 			<ul>				
 				
-				<li style="clear: both;"><img class="left-column-picture" src="pages.jpg"> <spam class="left_list_elem">Pages</spam></li>
-				<li style="clear: both;"><img class="left-column-picture" src="group.png"> <spam class="left_list_elem">Groups</spam></li>
-				<li style="clear: both;"><img class="left-column-picture" src="events.png"> <spam class="left_list_elem">Events</spam></li>
-				<li style="clear: both;"><img class="left-column-picture" src="friends-list.jpg"> <spam class="left_list_elem">Friends List</spam></li>
-				<li style="clear: both;"><img class="left-column-picture" src="dropdown.png"> <spam style="color: blue;" class="left_list_elem">See More...</spam></li>
-			</ul> <!-- explore -->
+				<li style="clear: both;">
+					<div>
+						<img class="left-column-picture" src="pages.jpg"> 
+						<spam class="left_list_elem">Pages</spam>
+					</div>
+				</li>
+				<li style="clear: both;">
+					<div>
+						<img class="left-column-picture" src="group.png">				 
+						<spam class="left_list_elem">Groups</spam>
+					</div>
+				</li>
+				<li style="clear: both;">
+					<div>
+						<img class="left-column-picture" src="events.png"> 
+						<spam class="left_list_elem">Events</spam>
+					</div>
+				</li>
+				<li style="clear: both;">
+					<div>
+						<img class="left-column-picture" src="friends-list.jpg"> 
+						<spam class="left_list_elem">Friends List</spam>	
+					</div>		
+				</li>
+				<li style="clear: both;">
+					<div>
+						<img class="left-column-picture" src="dropdown.png"> 
+						<spam style="color: blue;" class="left_list_elem">See More...</spam>
+					</div>
+				</li>
+			</ul> <!-- #explore -->
 
 			<spam class="left-label">CREATE</spam>
 
@@ -422,7 +470,7 @@
 				<li class="group"> <a>Group</a></li>
 				<li class="group"> <a>Event</a></li>
 				
-			</ul> <!-- create -->
+			</ul> <!-- #create -->
 
 
 		</div> <!-- #left-column -->
@@ -431,21 +479,27 @@
 			<form id="post-form" class="group">
 				<ul class="group" style="background: #f5f5f0;">
 					
-					<li style="float:left; background: white;"><img class="middle-column-picture" src="create-page.png"> <a class="middle_list_elem">Create a Post</a></li>
-					<li style="float:left;"><img class="middle-column-picture" src="album.png"> <a class="middle_list_elem">Photo/Video Album</a></li>
+					<li style="float:left; background: white;">
+						<img class="middle-column-picture" src="create-page.png"> 
+						<a class="middle_list_elem">Create a Post</a>
+					</li>
+					<li style="float:left;">
+						<img class="middle-column-picture" src="album.png"> 
+						<a class="middle_list_elem">Photo/Video Album</a>
+					</li>
 				</ul>	
 
 				<div id="main-form" class="group">
 					<img id="form-img" src="person.jpg">
 
-					<textarea>What's on your mind?</textarea>
-				
+					<textarea style="border: 0px;">What's on your mind?</textarea>				
 
 					<hr>
 					
 					<spam class="form-bottom"><img class="middle-column-picture" src="camera.png"> 
 						<spam class="middle_list_elem">Photo/Video</spam>
 					</spam>
+
 					<spam class="form-bottom"><img class="middle-column-picture" src="smile.png"> 
 						<spam class="middle_list_elem">Emotion</spam>
 					</spam>
@@ -453,10 +507,10 @@
 					<hr>
 
 					<button id="main-form-button">Post</button>
-				<div>
+				<div> <!-- #main-form -->
 
 
-			</form>
+			</form> <!-- #post-form -->
 
 
 
