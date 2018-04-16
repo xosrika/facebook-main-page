@@ -138,8 +138,13 @@
 			float: left;
 			width: 100%;			
 			border-radius: 4px;
+			height: 30px;
+			border-radius: 5px;
 		}
-
+				
+		#user-content:hover{
+			background: white;
+		}
 		#news-feed{
 			float: left;
 			width: 100%;
@@ -151,6 +156,12 @@
 			float: left;
 			width: 100%;			
 			border-radius: 4px;
+			height: 30px;
+			border-radius: 5px;
+		}
+
+		#left-messages:hover{
+			background: white;
 		}
 
 		.left-column-picture{
@@ -174,10 +185,7 @@
 			text-align: left;	
 				
 		}
-		#left-column a:hover {
-			background-color: white !important;
-		}	
-
+		
 		#left-column ul{
 			padding: 0px;
 			margin: 0px;
@@ -248,12 +256,12 @@
 			border-radius: 4px;
 		}
 		#post-form textarea{
-			width: 80%;
+			width: 85%;
 			border-color: white;
 			height: 105px;
 			padding: 5px;
 			color: grey;
-			
+			border: 0px;			
 		}
 
 		#form-img{
@@ -275,15 +283,7 @@
 			border-radius: 2px;
 		}
 
-		/* a.middle_list_elem{
-			margin-top: 5px
-			margin-bottom: 5px !important;
-			
-			font-size: 15px;
-			height: 20px;
-			
-		} */
-
+	
 		#middle-column a{
 			margin: 2px;
 			margin-right: 2px;
@@ -331,8 +331,7 @@
 			clear: both;
 		} 
 		.form-bottom{
-			float:left; 
-			background: white;
+					
 			float: left;
 			border-radius: 10px;
 			padding-left: 10px;
@@ -350,8 +349,62 @@
 		}
 
 		#main-form-button{
-			background: blue; 
-			float: right;			
+			background-color: blue; 
+			border: none;
+			color: white;
+			padding: 5px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 13px;
+			margin: 4px 2px;
+			cursor: pointer;			
+			float: right;		
+			border-radius: 3px;
+			padding-left: 10px;
+			padding-right: 10px;			
+			margin-right: 5px;			
+			margin-bottom: 5px; 			
+		}
+
+		.post-person-img{
+			height:100%;
+			float: left;
+			width: 50px;
+			border-radius: 25px;
+		}
+
+		.post-photo{
+			
+			width: 100%;
+			
+		}
+
+		.post{
+			padding: 5px;
+			clear: both;
+			border: 0px;
+			border-radius: 4px;
+			border-bottom: 1px;
+			border-left: 1px;
+			border-right: 1px;
+			border-style: solid;
+			border-color: #b3b3b3;
+			background: white;
+			margin-top: 12px;
+			margin-bottom: 12px; 
+		}
+
+		.post-action{
+			width: 33%;
+			color: grey;
+			display: block;
+			float: left;
+			text-align: center;
+		}
+
+		.post-action:hover{
+			background: #f2f2f2;
 		}
 		
 	</style>
@@ -492,7 +545,7 @@
 				<div id="main-form" class="group">
 					<img id="form-img" src="person.jpg">
 
-					<textarea style="border: 0px;">What's on your mind?</textarea>				
+					<textarea>What's on your mind?</textarea>				
 
 					<hr>
 					
@@ -507,11 +560,33 @@
 					<hr>
 
 					<button id="main-form-button">Post</button>
-				<div> <!-- #main-form -->
-
-
+				</div> <!-- #main-form -->
 			</form> <!-- #post-form -->
 
+			<div>
+				<div class="post group">
+					<div class="group" style="margin-bottom: 5px;">
+						<img class="post-person-img" src="person.jpg">
+
+						<p style="margin: 5px; margin-left:60px;"><spam style="color: blue;">Someone</spam> Posted a Photo</p>
+						<p style="margin: 5px; margin-left:60px;"><spam style="color: grey; font-size:14px">6 hr.</spam></p>	
+					</div>
+
+					<img class="post-photo" src="bird.jpg">
+
+					<div>
+						
+						<spam style="color: grey; font-size:16px; float: right; margin: 6px;">29 comments 82 shares</spam>
+						<hr>
+						<spam text-align="center" class="post-action"> Like </spam>
+						<spam text-align="center" class="post-action"> Share </spam>
+						<spam text-align="center" class="post-action"> Comment </spam> 
+					</div>
+							
+				</div>
+
+
+			</div>	
 
 
 
