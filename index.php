@@ -31,7 +31,7 @@
 		}
 		
 		#logo {
-			margin-left: 100px;
+			margin-left: 60px;
 			margin-top: 5px;
 			margin-bottom: 5px;
 			float: left;
@@ -122,7 +122,7 @@
 		}
 
 		#left-column{
-			margin-left: 95px;
+			margin-left: 55px;
 			padding: 5px;
 			width: 15%;
 			float: left;
@@ -396,15 +396,110 @@
 		}
 
 		.post-action{
-			width: 33%;
+			width: 30%;
 			color: grey;
 			display: block;
 			float: left;
+			padding: 1.5%;
 			text-align: center;
+			
 		}
 
 		.post-action:hover{
 			background: #f2f2f2;
+		}
+
+		#right-column{
+			margin-left: 5px;
+			margin-top: 0px;
+			width: 20%;
+			
+			float: left;
+		}
+
+		
+		.right-div{
+			background: white; 
+			border-color: grey; 
+			border-width: 2px; 
+			border-radius: 4px;
+			width: 100%;
+			height: 100%;
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+
+		.right_list_elem{
+			font-size: 13px;
+			float: left;
+			color: grey;
+				
+		}
+
+		.right-column-picture{
+			margin: 2px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			float: right;
+			height: 20px;
+			width: 20px;
+			border-radius: 2px;
+		}
+
+		#buffer-button{
+			background-color: #f2f2f2; 
+			border: none;
+			color: blue;
+			padding: 5px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 13px;
+			margin: 4px 2px;
+			cursor: pointer;			
+			float: left;		
+			border-radius: 10px;
+			padding-left: 10px;
+			padding-right: 10px;			
+			margin-right: 7px;			
+			margin-bottom: 7px; 			
+		}
+
+		.event-picture{
+			height:100%;			
+			width: 50px;
+			border-radius: 25px;	
+			float:left; 
+			clear:both;		
+		}
+
+		#event-button{
+			background-color: blue; 
+			border: none;
+			color: white;
+			padding: 5px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 13px;
+			margin: 4px 2px;
+			cursor: pointer;			
+			float: left;			
+			padding-left: 10px;
+			padding-right: 10px;			
+			margin-right: 7px;			
+			margin-bottom: 7px; 	
+			height:24px; 
+			margin-top:3px;
+			margin-left:5px;		
+		}
+
+		.right_list_sub-elem{
+			margin:0px; 
+			overflow:auto; 
+			display:block; 
+			padding-top: 3px; 
+			padding-left: 5px;
 		}
 		
 	</style>
@@ -549,11 +644,13 @@
 
 					<hr>
 					
-					<spam class="form-bottom"><img class="middle-column-picture" src="camera.png"> 
+					<spam class="form-bottom">
+						<img class="middle-column-picture" src="camera.png"> 
 						<spam class="middle_list_elem">Photo/Video</spam>
 					</spam>
 
-					<spam class="form-bottom"><img class="middle-column-picture" src="smile.png"> 
+					<spam class="form-bottom">
+						<img class="middle-column-picture" src="smile.png"> 
 						<spam class="middle_list_elem">Emotion</spam>
 					</spam>
 
@@ -569,7 +666,8 @@
 						<img class="post-person-img" src="person.jpg">
 
 						<p style="margin: 5px; margin-left:60px;"><spam style="color: blue;">Someone</spam> Posted a Photo</p>
-						<p style="margin: 5px; margin-left:60px;"><spam style="color: grey; font-size:14px">6 hr.</spam></p>	
+						<p style="margin: 5px; margin-left:60px;"><spam style="color: grey; font-size:14px">6 hr.</spam></p>
+						<p style="padding-left:5px; padding-top:5px; margin-top:10px; margin-bottom:10px">Hello there!</p>	
 					</div>
 
 					<img class="post-photo" src="bird.jpg">
@@ -582,17 +680,61 @@
 						<spam text-align="center" class="post-action"> Share </spam>
 						<spam text-align="center" class="post-action"> Comment </spam> 
 					</div>
+					
 							
-				</div>
-
-
+				</div> <!-- .post -->
 			</div>	
-
-
-
 		</div> <!-- #middle-column -->
 
 		<div id="right-column" class="group">
+
+			<div class="right-div group">
+
+				<p class="right_list_elem">YOUR PAGES</p>
+				<img class="right-column-picture" src="dropdown.png"> 
+
+				<hr>
+				<div>
+					<img class="right-column-picture" style="float:left; height:28px; width:28px; margin:0px;" src="buffer.png">
+					<button id="buffer-button" style="height:24px; margin-top:3px;">Buffer</button> 
+					<p style="font-size: 12px; color: grey; float: left; margin-top: 7px;">20+ Messages</p>
+					<img class="right-column-picture" style="margin-top:3px;" src="dropdown.png">
+				</div>
+				<hr>
+
+				<p class="right_list_elem" >Create an Event for Your Page</p>
+				<div style="clear: both;" class="group">
+					<img class="event-picture"  src="calendar.png">
+					<p class="right_list_sub-elem" style="font-size: 12px; "> 
+					Make it easy for people to find your event. Create it on Facebook.</p>
+					<button id="event-button">Cerate Event</button> 
+				</div>	
+
+				<hr>
+
+				<p class="right_list_elem" >Leatest Unread Message</p>
+				<p class="right_list_elem" style="float: right;" >8 hours ago</p>
+
+				<div style="clear: both;" class="group">
+					<img class="event-picture" style="border-radius:0px;" src="joe.png">
+					<p class="right_list_sub-elem" style="font-size: 14px;  color:grey;"> 
+					Joe Estes</p>
+					<p class="right_list_sub-elem" style="font-size: 12px; "> 
+					Which FB Page Templete did you use to...</p>
+				</div>
+
+				<hr>	
+
+				<p class="right_list_elem" >This weak</p>
+			
+				<div class="group" style="clear:both">
+					<p class="right_list_sub-elem" style="font-size: 18px; width:45%; display:block; float:left; 	text-align: center;">55,995</p>
+					<p class="right_list_sub-elem" style="font-size: 18px; width:45%; display:block; float:left; 	text-align: center;">3,795</p>
+
+				</div> 
+
+
+			</div>
 
 		</div> <!-- #right-column -->
 		
