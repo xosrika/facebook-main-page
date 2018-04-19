@@ -12,7 +12,7 @@
 		
 		body {
 			margin:0;
-			background:  #e6f2ff;	
+			background:  #E9EBEE;	
 		}
 		#logo{
 			float: left;
@@ -26,7 +26,7 @@
 			border: 0;
 			padding: 0;
 			overflow: hidden;
-			background-color: steelblue;
+			background-color: #4267B2;
 			float: left;
 		}
 		
@@ -45,9 +45,9 @@
 			margin: 0;
 			border: 0;
 			float: left;
-			margin-top: 5px;
-			margin-bottom: 5px;
-			margin-left: 4px;
+			/* margin-top: 5px;
+			margin-bottom: 5px; */
+			/* margin-left: 4px; */
 			border-radius: 4px;
 			height: 30px;
 			
@@ -57,11 +57,12 @@
 
 		#search{
 		
-			margin-top: 5px;
-			margin-bottom: 5px;
+			/* margin-top: 5px;
+			margin-bottom: 5px; */
 			float: left;
 			height: 30px;
-			border-radius: 4px;			
+			width: 320px;
+			border-radius: 0px;			
 			color: #f2f2f2;
 			
 		}
@@ -76,7 +77,7 @@
 			margin-bottom: 5px;
 			float: right;
 			height: 30px;
-			width: 30px;
+			/* width: 100%; */
 			border-radius: 4px;
 		}
 
@@ -86,7 +87,7 @@
 			margin-bottom: 5px;
 			float: right;
 			height: 30px;
-			width: 30px;
+			/* width: 30px; */
 			border-radius: 4px;
 		}
 		#person{
@@ -105,7 +106,7 @@
 			margin-bottom: 5px;
 			float: right;
 			height: 30px;
-			width: 30px;
+			/* width: 30px; */
 			border-radius: 4px;
 		}
 		#right-bar a{
@@ -133,7 +134,20 @@
 			margin-top:50px;
 			
 		}
-
+		#search-button{
+			background-color: #f6f7f9;
+			/* margin-top: 5px; */
+			height: 30px; 
+			width: 50px; 
+			border: none;
+			color: white;
+			padding: 5px;
+			text-align: center;					
+			cursor: pointer;			
+			float: left;			
+			padding-left: 10px;
+			padding-right: 10px;		
+		}
 		#user-content{
 			float: left;
 			width: 100%;			
@@ -200,6 +214,7 @@
 			clear: both;
 			float: left;
 			font-size: 14px;
+			font-weight: bold;
 		}
 
 		ul{
@@ -251,9 +266,12 @@
 		#post-form{
 			background: white;
 			border: 1px;
-			border-color: #f2f2f2;
+			border-color: #b3b3b3;
 			width: 100%;
-			border-radius: 4px;
+			
+			border-radius: 7px;
+			border-style: solid;
+			border-color: #b3b3b3;
 		}
 		#post-form textarea{
 			width: 85%;
@@ -278,8 +296,8 @@
 			margin-top: 5px;
 			margin-bottom: 5px;
 			float: left;
-			height: 20px;
-			width: 20px;
+			height: 16px;
+			width: 16px;
 			border-radius: 2px;
 		}
 
@@ -293,14 +311,17 @@
 			height: 14px;			
 			text-align: center;					
 		}	
+
+		.middle_list_elem{
+			margin: 2px;
+			font-size: 13px;
+			float: left;
+		}
 		#main-form{
 			padding: 5px;
 			clear: both;
-			border: 0px;
-			border-radius: 4px;
-			border-bottom: 1px;
-			border-left: 1px;
-			border-right: 1px;
+			border: 0px;			
+			border-top: 1px;			
 			border-style: solid;
 			border-color: #b3b3b3;
 		}
@@ -316,9 +337,7 @@
 		#post-form ul{
 			padding: 2px;
 			border: 1px;
-			border-radius: 4px;
-			border-style: solid;
-			border-color: #b3b3b3;
+			border-radius: 7px;			
 		}		
 		hr { 
 			display: block;
@@ -330,26 +349,23 @@
 			border-width: 1px;
 			clear: both;
 		} 
-		.form-bottom{
-					
+		.form-bottom{					
 			float: left;
-			border-radius: 10px;
+			border-radius: 15px;
 			padding-left: 10px;
+			padding-right: 10px;
 			background: #f5f5f0;
 			margin-right: 5px;
 			color: grey;
 			margin-bottom: 10px;
 		}
 
-		.form-bottom spam{
-			display: block;
-			width: 160px;
-			margin-top: 6px; 
-			margin-bottom: 6px; 
+		.form-bottom:hover{
+			background: #e9ebee;
 		}
 
 		#main-form-button{
-			background-color: blue; 
+			background-color: #4267B2; 
 			border: none;
 			color: white;
 			padding: 5px;
@@ -427,6 +443,7 @@
 			height: 100%;
 			padding-left: 5px;
 			padding-right: 5px;
+			padding-bottom: 10px;
 		}
 
 		.right_list_elem{
@@ -449,7 +466,7 @@
 		#buffer-button{
 			background-color: #f2f2f2; 
 			border: none;
-			color: blue;
+			color: #4267B2;
 			padding: 5px;
 			text-align: center;
 			text-decoration: none;
@@ -474,7 +491,7 @@
 		}
 
 		#event-button{
-			background-color: blue; 
+			background-color: #4267B2; 
 			border: none;
 			color: white;
 			padding: 5px;
@@ -501,6 +518,42 @@
 			padding-top: 3px; 
 			padding-left: 5px;
 		}
+
+		.post-count{
+			font-size: 18px; 
+			width:45%; 
+			display:block; 
+			float:left; 	
+			text-align: center;
+		}
+
+		.boost-button{
+			background-color: #4267B2; 
+			border: none;
+			color: white;
+			padding: 5px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 13px;
+			margin: 4px 2px;
+			cursor: pointer;			
+			float: left;			
+			padding-left: 5px;
+			padding-right: 5px;
+			margin:0px;					
+			margin-bottom: 7px; 	
+			height:20px; 			
+			margin-left: 33px;
+			font-size:11px;
+		}
+
+		.search-elems{
+			float:left; 
+			
+			margin-top:5px; 
+			margin-left:4px;
+		}
 		
 	</style>
     <meta charset="utf-8">
@@ -512,8 +565,10 @@
 	<div id="navbar" class="group">
 		<form id="left-bar" action="index.php">
 			<img id="logo" src="logo1.png">
-			<input type="text" id="search" name="search" placeholder="Search Facebook">
-			<button id="search">search </img> </button>
+			<div class="group search-elems" >
+				<input type="text" id="search" name="search" placeholder="Search Facebook">
+				<button id="search-button"> <img  src="search.png" style="height:20px; border:0px;"> </button>
+			</div>
 		</form> <!-- #left-bar -->
 		<div id="right-bar">		
 		
@@ -625,15 +680,18 @@
 
 		<div id="middle-column" class="group">
 			<form id="post-form" class="group">
-				<ul class="group" style="background: #f5f5f0;">
+				<ul class="group" style="background: #F6F7F9; padding: 0px;">
 					
-					<li style="float:left; background: white;">
+					<li style="float:left; font-size:13px; color: #4b4f56;">
 						<img class="middle-column-picture" src="create-page.png"> 
-						<a class="middle_list_elem">Create a Post</a>
+						<a class="middle_list_elem"><b>Create a Post</b></a>
 					</li>
 					<li style="float:left;">
+						<spam style="height: 20px; margin: 5px; border:0px; border-right:1px; border-style:solid; border-color:#ced0d4; float:left; "> </spam> 
+					</li>
+					<li style="float:left; margin:0px; font-size:13px; color: #5471a8">
 						<img class="middle-column-picture" src="album.png"> 
-						<a class="middle_list_elem">Photo/Video Album</a>
+						<a class="middle_list_elem"><b>Photo/Video Album</b></a>
 					</li>
 				</ul>	
 
@@ -644,14 +702,14 @@
 
 					<hr>
 					
-					<spam class="form-bottom">
+					<spam class="form-bottom group">
 						<img class="middle-column-picture" src="camera.png"> 
-						<spam class="middle_list_elem">Photo/Video</spam>
+						<spam class="middle_list_elem" style="margin-top: 6px;"><b>Photo/Video</b></spam>
 					</spam>
 
-					<spam class="form-bottom">
+					<spam class="form-bottom group">
 						<img class="middle-column-picture" src="smile.png"> 
-						<spam class="middle_list_elem">Emotion</spam>
+						<spam class="middle_list_elem" style="margin-top: 6px;"><b>Emotion</b></spam>
 					</spam>
 
 					<hr>
@@ -699,7 +757,7 @@
 					<button id="buffer-button" style="height:24px; margin-top:3px;">Buffer</button> 
 					<p style="font-size: 12px; color: grey; float: left; margin-top: 7px;">20+ Messages</p>
 					<img class="right-column-picture" style="margin-top:3px;" src="dropdown.png">
-				</div>
+				</div><!-- your pages -->
 				<hr>
 
 				<p class="right_list_elem" >Create an Event for Your Page</p>
@@ -708,7 +766,7 @@
 					<p class="right_list_sub-elem" style="font-size: 12px; "> 
 					Make it easy for people to find your event. Create it on Facebook.</p>
 					<button id="event-button">Cerate Event</button> 
-				</div>	
+				</div><!-- create event -->
 
 				<hr>
 
@@ -721,20 +779,41 @@
 					Joe Estes</p>
 					<p class="right_list_sub-elem" style="font-size: 12px; "> 
 					Which FB Page Templete did you use to...</p>
-				</div>
+				</div> <!-- unread message -->
 
 				<hr>	
 
 				<p class="right_list_elem" >This weak</p>
 			
 				<div class="group" style="clear:both">
-					<p class="right_list_sub-elem" style="font-size: 18px; width:45%; display:block; float:left; 	text-align: center;">55,995</p>
-					<p class="right_list_sub-elem" style="font-size: 18px; width:45%; display:block; float:left; 	text-align: center;">3,795</p>
+					<p class="right_list_sub-elem post-count" >55,995</p>
+					<p class="right_list_sub-elem post-count" >3,795</p>
+					<p class="right_list_sub-elem post-count" style="color:blue; font-size:13px;">Post Reach</p>
+					<p class="right_list_sub-elem post-count" style="color:blue; font-size:13px;">People Engaged</p>
+				</div> <!-- post counts for week -->
 
-				</div> 
+				<hr>
 
+				<p class="right_list_elem" >Recent Posts</p>
+				<div class="group" style="clear:both">
+					<div  class="group" style="clear:both;">
+						<img style="float:left; height:26px;" src="recent-post.jpg">
+						<p class="right_list_sub-elem" style="font-size: 12px; padding:0px; padding-top:3px; color:blue;">
+						A Nobel prize-winning physicist identified...</p>
+					</div>					
+					<button class="boost-button">Boost Post</button>
 
-			</div>
+				</div>
+				<div class="group" style="clear:both">
+					<div  class="group" style="clear:both;">
+						<img style="float:left; height:26px;" src="recent-post.jpg">
+						<p class="right_list_sub-elem" style="font-size: 12px; padding:0px; padding-top:3px; color:blue;">
+						Buffer co-founfers Joel &amp; Leo enjoing...</p>
+					</div>					
+					
+				</div>
+
+			</div><!--.right-div group--> 
 
 		</div> <!-- #right-column -->
 		
