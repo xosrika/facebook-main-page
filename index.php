@@ -3,7 +3,9 @@
 <html lang="en-US">
   <head>
 	<style>
-				
+		*{
+			font-family:Helvetica;
+		}		
 		.group:after {
 		  content: "";
 		  display: table;
@@ -57,14 +59,12 @@
 
 		#search{
 		
-			/* margin-top: 5px;
-			margin-bottom: 5px; */
+			padding-left:7px;
 			float: left;
 			height: 30px;
 			width: 320px;
 			border-radius: 0px;			
-			color: #f2f2f2;
-			
+					
 		}
 
 		#right-bar{
@@ -136,7 +136,7 @@
 		}
 		#search-button{
 			background-color: #f6f7f9;
-			/* margin-top: 5px; */
+			
 			height: 30px; 
 			width: 50px; 
 			border: none;
@@ -157,13 +157,16 @@
 		}
 				
 		#user-content:hover{
-			background: white;
+			background: #f6f7f9;
 		}
 		#news-feed{
 			float: left;
 			width: 100%;
-			background: white;
+			background: #f6f7f9;
 			border-radius: 4px;
+			border-style: solid;
+			border-width: 1px;
+			border-color: #dddfe2;
 		}
 
 		#left-messages{
@@ -175,7 +178,7 @@
 		}
 
 		#left-messages:hover{
-			background: white;
+			background: #f6f7f9;
 		}
 
 		.left-column-picture{
@@ -213,7 +216,7 @@
 			margin-top: 20px !important;
 			clear: both;
 			float: left;
-			font-size: 14px;
+			font-size: 12px;
 			font-weight: bold;
 		}
 
@@ -251,7 +254,7 @@
 			border-radius: 5px;
 		}
 		#left-column ul li div:hover{
-			background: white;
+			background: #f6f7f9;
 		}
 
 		#middle-column{
@@ -266,17 +269,17 @@
 		#post-form{
 			background: white;
 			border: 1px;
-			border-color: #b3b3b3;
+			
 			width: 100%;
 			
 			border-radius: 7px;
 			border-style: solid;
-			border-color: #b3b3b3;
+			border-color: #dddfe2;
 		}
 		#post-form textarea{
 			width: 85%;
 			border-color: white;
-			height: 105px;
+			height: 45px;
 			padding: 5px;
 			color: grey;
 			border: 0px;			
@@ -288,7 +291,7 @@
 			width: 50px;
 			border-radius: 25px;
 			
-			margin-bottom: 60px;
+			margin-bottom: 30px;
 		}
 
 		.middle-column-picture{
@@ -323,7 +326,7 @@
 			border: 0px;			
 			border-top: 1px;			
 			border-style: solid;
-			border-color: #b3b3b3;
+			border-color: #dddfe2;
 		}
 		
 		#post-form li{
@@ -384,7 +387,7 @@
 		}
 
 		.post-person-img{
-			height:100%;
+			height:50px;
 			float: left;
 			width: 50px;
 			border-radius: 25px;
@@ -397,7 +400,7 @@
 		}
 
 		.post{
-			padding: 5px;
+			padding: 10px;
 			clear: both;
 			border: 0px;
 			border-radius: 4px;
@@ -405,7 +408,7 @@
 			border-left: 1px;
 			border-right: 1px;
 			border-style: solid;
-			border-color: #b3b3b3;
+			border-color: #dddfe2;
 			background: white;
 			margin-top: 12px;
 			margin-bottom: 12px; 
@@ -418,6 +421,7 @@
 			float: left;
 			padding: 1.5%;
 			text-align: center;
+			font-size: 14px;
 			
 		}
 
@@ -436,9 +440,10 @@
 		
 		.right-div{
 			background: white; 
-			border-color: grey; 
-			border-width: 2px; 
+			border-color:#dddfe2; 
+			border-width: 1px; 
 			border-radius: 4px;
+			border-style: solid;
 			width: 100%;
 			height: 100%;
 			padding-left: 5px;
@@ -554,6 +559,75 @@
 			margin-top:5px; 
 			margin-left:4px;
 		}
+
+		.post-link{
+			margin-bottom: 10px; 
+			border-style:solid; 
+			border-width:1px; 
+			border-color:#dddfe2; 
+			background:white;
+		}
+
+		.post-link:hover{
+			border-color:grey;
+			 
+		}
+
+		.post-text{
+			padding-top:5px; 
+			margin-top:12px; 
+			margin-bottom:10px; 
+			font-size:15px; 
+			line-height: 1.2;
+		}	
+
+		#friends-column{
+			
+			float:right;
+			width: 15%;
+			padding-right:20px;
+
+			border-color:#dddfe2; 
+			border-width: 1px; 
+			border-radius: 4px;
+			border-style: solid;
+			
+			height:100vh;
+			
+		}
+
+		#friend-search{
+			width:40%;
+			margin-right:30px;		
+			margin: 0;
+			border: 0;
+			border-radius:0px;
+			padding: 0;
+			overflow: hidden;			
+			float: left;
+			
+		}
+
+		.search-friend-button{
+			background-color: white;		
+			height: 30px; 
+			width: 30px; 
+			border: none;
+			color: white;
+			padding: 3px;
+			text-align: center;					
+			cursor: pointer;			
+			float: left;			
+			padding-left: 8px;
+			padding-right: 8px;		
+		}
+		#right-bottom{
+			position: fixed;
+			background:white;	
+			bottom: 0;
+			width:17%;
+		}
+
 		
 	</style>
     <meta charset="utf-8">
@@ -698,7 +772,7 @@
 				<div id="main-form" class="group">
 					<img id="form-img" src="person.jpg">
 
-					<textarea>What's on your mind?</textarea>				
+					<textarea placeholder="What's on your mind?"></textarea>				
 
 					<hr>
 					
@@ -725,21 +799,75 @@
 
 						<p style="margin: 5px; margin-left:60px;"><spam style="color: blue;">Someone</spam> Posted a Photo</p>
 						<p style="margin: 5px; margin-left:60px;"><spam style="color: grey; font-size:14px">6 hr.</spam></p>
-						<p style="padding-left:5px; padding-top:5px; margin-top:10px; margin-bottom:10px">Hello there!</p>	
+						<p class="post-text">
+						Hello there!</p>	
 					</div>
 
-					<img class="post-photo" src="bird.jpg">
-
+					<div>	
+						<img class="post-photo" src="bird.jpg">
+					</div>
 					<div>
 						
-						<spam style="color: grey; font-size:16px; float: right; margin: 6px;">29 comments 82 shares</spam>
+						<spam style="color: grey; font-size:14px; float: right; margin: 6px;">29 comments 82 shares</spam>
 						<hr>
-						<spam text-align="center" class="post-action"> Like </spam>
-						<spam text-align="center" class="post-action"> Share </spam>
-						<spam text-align="center" class="post-action"> Comment </spam> 
+						<spam class="post-action"> Like </spam>
+						<spam class="post-action"> Share </spam>
+						<spam class="post-action"> Comment </spam> 
+					</div>						
+				</div> <!-- .post -->
+				<div class="post group">
+					<div class="group" style="margin-bottom: 5px;">
+						<img class="post-person-img" src="mark.jpg">
+
+						<p style="margin: 5px; margin-left:60px;"><spam style="color: blue;">Mark Zuckerberg</spam> Posted</p>
+						<p style="margin: 5px; margin-left:60px;"><spam style="color: grey; font-size:14px">8 hr.</spam></p>
+						<p class="post-text">
+						Facebook is an American online social media and social 
+						networking service company based in Menlo Park, California. 
+						Its website was launched on February 4, 2004, by Mark Zuckerberg, 
+						along with fellow Harvard College students and roommates Eduardo Saverin, 
+						Andrew McCollum, Dustin Moskovitz, and Chris Hughes.</p>	
 					</div>
 					
-							
+					<div>
+						
+						<spam style="color: grey; font-size:14px; float: right; margin: 6px;">132451 comments 12313 shares</spam>
+						<hr>
+						<spam class="post-action"> Like </spam>
+						<spam class="post-action"> Share </spam>
+						<spam class="post-action"> Comment </spam> 
+					</div>						
+				</div> <!-- .post -->
+
+				<div class="post group">
+					<div class="group" style="margin-bottom: 5px;">
+						<img class="post-person-img" src="jeffbezos.jpg">
+
+						<p style="margin: 5px; margin-left:60px;"><spam style="color: blue;">Jeff Bezos</spam> Posted</p>
+						<p style="margin: 5px; margin-left:60px;"><spam style="color: grey; font-size:14px">8 hr.</spam></p>
+						<p class="post-text">
+						Check out Amazon.com</p>	
+					</div>
+
+					<div class="post-link group">
+						<img class="post-photo" src="amazon.jpg">
+						<div >
+							<h2 style="margin: 10px; margin-bottom:6px;">Amazon!</h2>
+							<p style="padding-left:10px; font-size:14px; margin-top:6px; margin-bottom:6px;">Biggest only shop in the world.
+							Here you can buy anything from aroud the globe. We will make sure that yoju will get your product fast and safe.
+							Always to help you.</p>
+							<p style="padding-left:10px; font-size:13px; margin-top:6px; margin-bottom:6px; color: grey;"> AMAZON.COM </p>
+						</div>	
+					</div>
+					
+					<div>
+						
+						<spam style="color: grey; font-size:14px; float: right; margin: 6px;">32124 comments 523213 shares</spam>
+						<hr>
+						<spam class="post-action"> Like </spam>
+						<spam class="post-action"> Share </spam>
+						<spam class="post-action"> Comment </spam> 
+					</div>						
 				</div> <!-- .post -->
 			</div>	
 		</div> <!-- #middle-column -->
@@ -817,8 +945,20 @@
 
 		</div> <!-- #right-column -->
 		
-		<div id="friends-column" class="group">
+		<div id="friends-column" class="group">	
+			<p>adsadsads
+			adsadsadsads
+			adsadsadsads
+			adsadsadsads
+			adsadsadsaddas
+			
+			adsadsads</p>	
 
+			<div id="right-bottom" class="group">
+				<button class="search-friend-button"> <img  src="search.png" style="height:15px; border:0px;"> </button>
+				<input type="text" id="friend-search" name="friend-search" placeholder="Search">
+				<button class="search-friend-button" style="float:right; margin-right:4px;"> <img  src="cog.png" style="height:15px; border:0px;"> </button>
+			</div>
 		</div> <!-- #friends-column -->
 
 	</div> <!-- #content -->
