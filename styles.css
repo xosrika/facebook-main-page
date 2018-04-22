@@ -486,7 +486,7 @@ hr {
         
 }
 
-.right-column-picture{
+.right-column-dropdown{
     margin: 2px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -496,6 +496,22 @@ hr {
     border-radius: 2px;
 }
 
+.right-column-buffer{        
+    border-radius: 2px;
+    float:left; 
+    height:28px; 
+    width:28px; 
+    margin:0px;
+}
+
+.right-column-buffer-text{
+    font-size: 12px; 
+    color: grey; 
+    float: left; 
+    margin-top: 7px;
+}
+
+
 #buffer-button{
     background-color: #f2f2f2; 
     border: none;
@@ -503,7 +519,7 @@ hr {
     padding: 5px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    
     font-size: 13px;
     margin: 4px 2px;
     cursor: pointer;			
@@ -512,7 +528,9 @@ hr {
     padding-left: 10px;
     padding-right: 10px;			
     margin-right: 7px;			
-    margin-bottom: 7px; 			
+    margin-bottom: 7px; 
+    height:24px;
+    margin-top:3px;		
 }
 
 .event-picture{
@@ -550,6 +568,7 @@ hr {
     display:block; 
     padding-top: 3px; 
     padding-left: 5px;
+    font-size: 12px;
 }
 
 .right-list-post-link{
@@ -565,6 +584,21 @@ hr {
     display:block; 
     float:left; 	
     text-align: center;
+}
+
+.post-count-name{
+    
+    width:45%; 
+    display:block; 
+    float:left; 	
+    text-align: center;
+    color:blue; 
+    font-size:13px;
+}
+
+.left-post-logo{
+    float:left; 
+    height:26px;    
 }
 
 .boost-button{
@@ -622,13 +656,12 @@ hr {
     top:0;
     margin-top: 50px;			
     width: 15%;
-    padding-right:20px;
+    padding-right:10px;
     border-color:#dddfe2; 
     border-width: 1px; 
     border-radius: 4px;
     border-style: solid;			
-    height:100vh;
-    
+    height:100vh;    
 }
 
 #friend-search{
@@ -656,7 +689,7 @@ hr {
     padding-left: 8px;
     padding-right: 8px;		
 }
-#right-bottom{
+#friend-search{
     position: fixed;
     background:white;	
     bottom: 0;
@@ -727,4 +760,94 @@ hr {
 .post-date{
     color: grey; 
     font-size:14px;
+}
+
+.search-button{
+    height:17px; 
+    border:0px;
+}
+
+#friends-column-content{
+    margin:0px;
+    border:0px;
+    padding: 0px;    
+    width:100%;
+}  
+
+.friend-column-label{    
+    color: #A9A9A9;   
+    margin-top:5px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    float:left;    
+    margin-left: 3px;
+
+}
+.friend-column-label-little{
+    color: #A9A9A9; 
+    margin-top:5px;
+    font-size: 11px;
+    font-weight: bold;    
+    float:right;    
+    /* margin-right: 3px;  */
+
+}
+
+.friends-games{
+    border:0px;
+    border-bottom:1px;
+    border-style: solid;    
+    border-color: #dddfe2;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+}
+
+.friends-games-list{
+    clear:both;
+    padding-top: 7px;
+}
+
+.friends-game-img{
+    margin: 2px;
+    height: 46px;
+    width: 46px;
+}
+
+.friends-game-arrow{
+    height: 15px;
+    width: 15px;
+    margin-bottom:17px;
+}
+
+#friend-list{
+    padding: 5px;
+    padding-top: 10px; 
+}
+
+.friend-list-elem{
+    width: 100%;
+    margin: 2px 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.friend-list-elem-img{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    float: left;
+}
+
+.friend-list-elem-name{
+    font-size: 14px;
+    text-align: center;
+    float: left;
+    margin-top:11px;
+    margin-left: 3px;
+}
+
+.friend-list-elem-time{
+    
 }

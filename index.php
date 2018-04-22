@@ -307,21 +307,21 @@
 			<div class="right-div group">
 
 				<p class="right-list-elem">YOUR PAGES</p>
-				<img class="right-column-picture" src="dropdown.png"> 
+				<img class="right-column-dropdown" src="dropdown.png"> 
 
 				<hr>
 				<div>
-					<img class="right-column-picture" style="float:left; height:28px; width:28px; margin:0px;" src="buffer.png">
-					<button id="buffer-button" style="height:24px; margin-top:3px;">Buffer</button> 
-					<p style="font-size: 12px; color: grey; float: left; margin-top: 7px;">20+ Messages</p>
-					<img class="right-column-picture" style="margin-top:3px;" src="dropdown.png">
+					<img class="right-column-buffer" src="buffer.png">
+					<button id="buffer-button">Buffer</button> 
+					<p class="right-column-buffer-text">20+ Messages</p>
+					<img class="right-column-dropdown" style="margin-top:3px;" src="dropdown.png">
 				</div><!-- your pages -->
 				<hr>
 
 				<p class="right-list-elem" >Create an Event for Your Page</p>
 				<div style="clear: both;" class="group">
 					<img class="event-picture"  src="calendar.png">
-					<p class="right-list-sub-elem" style="font-size: 12px; "> 
+					<p class="right-list-sub-elem" > 
 					Make it easy for people to find your event. Create it on Facebook.</p>
 					<button id="event-button">Cerate Event</button> 
 				</div><!-- create event -->
@@ -333,9 +333,9 @@
 
 				<div style="clear: both;" class="group">
 					<img class="event-picture" style="border-radius:0px;" src="joe.png">
-					<p class="right-list-sub-elem" style="font-size: 14px;  color:grey;"> 
+					<p class="right-list-sub-elem" style="font-size: 14px; color:grey;"> 
 					Joe Estes</p>
-					<p class="right-list-sub-elem" style="font-size: 12px; "> 
+					<p class="right-list-sub-elem" > 
 					Which FB Page Templete did you use to...</p>
 				</div> <!-- unread message -->
 
@@ -346,55 +346,111 @@
 				<div class="group" style="clear:both">
 					<p class="right-list-sub-elem post-count" >55,995</p>
 					<p class="right-list-sub-elem post-count" >3,795</p>
-					<p class="right-list-sub-elem post-count" style="color:blue; font-size:13px;">Post Reach</p>
-					<p class="right-list-sub-elem post-count" style="color:blue; font-size:13px;">People Engaged</p>
+					<p class="right-list-sub-elem post-count-name" >Post Reach</p>
+					<p class="right-list-sub-elem post-count-name" >People Engaged</p>
 				</div> <!-- post counts for week -->
 
 				<hr>
 
 				<p class="right-list-elem" >Recent Posts</p>
-				<div class="group" style="clear:both">
-					<div  class="group" style="clear:both;">
-						<img style="float:left; height:26px;" src="recent-post.jpg">
-						<a href="#">
-								<p class="right-list-sub-elem right-list-post-link">
-									A Nobel prize-winning physicist identified...
-								</p>
-						</a>
-					</div>					
-					<button class="boost-button">Boost Post</button>
 
-				</div>
-				<div class="group" style="clear:both">
-					<div  class="group" style="clear:both;">
-						<img style="float:left; height:26px;" src="recent-post.jpg">
-						<p class="right-list-sub-elem right-list-post-link">
-							Buffer co-founfers Joel &amp; Leo enjoing...
-						</p>
-					</div>					
-					
-				</div>
+				<div id="recent-posts">
+					<div class="group" style="clear:both">
+						<div  class="group" style="clear:both;">
+							<img class="left-post-logo" src="recent-post.jpg">
+							<a href="#">
+									<p class="right-list-sub-elem right-list-post-link">
+										A Nobel prize-winning physicist identified...
+									</p>
+							</a>
+						</div>					
+						<button class="boost-button">Boost Post</button>
+					</div>
+
+					<div class="group" style="clear:both">
+						<div  class="group" style="clear:both;">
+							<img class="left-post-logo" src="recent-post.jpg">
+							<a href="#">
+								<p class="right-list-sub-elem right-list-post-link">
+									Buffer co-founfers Joel &amp; Leo enjoing...
+								</p>
+							</a>	
+						</div>						
+					</div>
+				</div> <!-- #recent-posts --> 	
 
 			</div><!--.right-div group--> 
 
 		</div> <!-- #right-column -->
 		
 		<div id="friends-column" class="group">	
-			<p>adsadsads
-			adsadsadsads
-			adsadsadsads
-			adsadsadsads
-			adsadsadsaddas
 			
-			adsadsads</p>	
+			<div id="friends-column-content">
+				<div class="friends-games group">
+					<div>
+						<span class="friend-column-label">
+							flash games
+						</span>	
+						<span class="friend-column-label-little">
+							more
+						</span>	
+						<div class="friends-games-list group">
+							<img class="friends-game-arrow" src="arrow-left.png">
+							<img class="friends-game-img" src="flash-game-1.jpg">
+							<img class="friends-game-img" src="flash-game-1.jpg">
+							<img class="friends-game-img" src="flash-game-1.jpg">
+							<img class="friends-game-arrow" src="arrow-right.png">	
+						</div><!-- #friend-games-list -->
+					</div>		
+					<hr>
+					<div>
+						<span class="friend-column-label">
+							recomended games
+						</span>	
+						<span class="friend-column-label-little">
+							more
+						</span>	
+						<div class="friends-games-list group">
+							<img class="friends-game-arrow" src="arrow-left.png">
+							<img class="friends-game-img" src="flash-game-1.jpg">
+							<img class="friends-game-img" src="flash-game-1.jpg">
+							<img class="friends-game-img" src="flash-game-1.jpg">
+							<img class="friends-game-arrow" src="arrow-right.png">	
+						</div><!-- #friend-games-list -->
+					</div> 		
+				</div> <!-- #friend-games -->
+				
+				<div id="friend-list">
+					<div class="friend-list-elem">
+						<img class="friend-list-elem-img" src="joe.png">
+						<span class="friend-list-elem-name">Joe Estes</span>
+						<span class="friend-list-elem-time">2 min</span>
+					</div>	
 
-			<div id="right-bottom" class="group">
-				<button class="search-friend-button"> <img  src="search.png" style="height:15px; border:0px;"> </button>
-				<input type="text" id="friend-search" name="friend-search" placeholder="Search">
-				<button class="search-friend-button" style="float:right; margin-right:4px;"> 
-					<img  src="cog.png" style="height:15px; border:0px;"> 
+
+				</div><!-- #friend-list -->		
+
+
+
+			</div><!-- #friends-column-content -->
+
+
+
+
+			<div id="friend-search" class="group">
+				
+				<button class="search-friend-button"> 
+					<img class="search-button" src="search.png"> 
 				</button>
-			</div>
+				
+				
+				<input type="text" id="friend-search" name="friend-search" placeholder="Search" style="width:50px;">
+
+				<button class="search-friend-button" style="float:right; margin-right:12px;"> 
+					<img class="search-button" style="float:right" src="cog.png"> 
+				</button>				
+				
+			</div><!-- #friend-search -->
 		</div> <!-- #friends-column -->
 
 	</div> <!-- #content -->
