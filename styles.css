@@ -30,9 +30,6 @@ body {
     margin:0;
     background:  #E9EBEE;	
 }
-#logo{
-    float: left;
-}	
 
 #navbar{			
     position: fixed;
@@ -48,40 +45,29 @@ body {
 
 #logo {
     margin-left: 60px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     float: left;
-    height: 30px;
-    width: 30px;
-    border-radius: 4px;
-}
-input[type=text], select {
-    width: 25%;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    float: left;
-    /* margin-top: 5px;
-    margin-bottom: 5px; */
-    /* margin-left: 4px; */
-    border-radius: 4px;
-    height: 30px;
+    height: 25px;
+    width: 25px;
+    border-radius: 1px;
     
-    border-right-color: #f2f2f2;
-    border-right-width: 7px;
 }
+
 
 #search{
     border-radius: 0px;		
-    border-top-left-radius: 7px;
-    border-bottom-left-radius: 7px;
-
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    padding: 0;
+    margin: 0;
+    border: 0;
     padding-left:7px;
     float: left;
-    height: 30px;
+    height: 25px;
     width: 320px;
-        
-            
+    border-right-color: #f2f2f2;
+    
 }
 
 #right-bar{
@@ -89,53 +75,79 @@ input[type=text], select {
 }
 
 #friend-req{
-    margin: 2px;			
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 25px;  
+    margin-top: 10px;    
     float: right;
-    height: 30px;
-    /* width: 100%; */
-    border-radius: 4px;
+    height: 25px;
 }
 
 #messages{
-    margin: 2px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 10px;  
+    margin-top: 10px;    
     float: right;
-    height: 30px;
-    /* width: 30px; */
-    border-radius: 4px;
+    height: 25px;   
 }
 #person{
     margin: 2px;
-    margin-top: 5px;
+    margin-top: 8px;
     margin-bottom: 5px;
     float: right;
     height: 30px;
     width: 30px;
-    border-radius: 4px;
+    border-radius: 15px;
 }
-#globe{
+
+#bar-dropdown{
     margin: 2px;
-    margin-right: 200px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-right: 250px;
+    margin-top: 10px;
+    
     float: right;
-    height: 30px;
-    /* width: 30px; */
-    border-radius: 4px;
+    height: 25px;
+    /* width: 30px; */   
+}
+
+#help{
+    margin-right: 10px;
+    margin-left: 15px;  
+    margin-top: 10px;    
+    float: right;
+    height: 25px;   
+}
+
+.navbar-line{
+    /* margin-right: 5px;
+    margin-left: 5px;   */
+    margin-top: 12px;
+    border:0px;
+    border-right: 1px;
+    float: right;    
+    border-style: solid;
+    border-color: #3b5c9f;
+    height: 21px; 
+}
+
+#globe{
+    margin-right: 15px;
+    margin-left: 10px;  
+    margin-top: 10px;    
+    float: right;
+    height: 25px;     
 }
 #right-bar a{
     margin: 2px;
-    margin-right: 20px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    
+    margin-top: 7px;
+    margin-bottom: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 10px;
+    padding-left:10px;
     float: right;
     height: 16px;
-    width: 50px;
+    
     
     text-align: center;
     color: white; 
@@ -160,10 +172,10 @@ input[type=text], select {
 }
 #search-button{
     background-color: #f6f7f9;
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
-    height: 30px; 
-    width: 50px; 
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    height: 25px; 
+    width: 55px; 
     border: none;
     color: white;
     padding: 5px;
@@ -171,7 +183,7 @@ input[type=text], select {
     cursor: pointer;			
     float: left;			
     padding-left: 10px;
-    padding-right: 10px;		
+    padding-right: 10px;    	
 }
 #user-content{
     /* float: left; */
@@ -458,7 +470,7 @@ hr {
 }
 
 #right-column{
-    margin-left: 5px;
+    margin-left: 15px;
     margin-top: 0px;
     width: 20%;
     
@@ -477,6 +489,7 @@ hr {
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .right-list-elem{
@@ -484,6 +497,51 @@ hr {
     float: left;
     color: grey;
         
+}
+
+.story{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    clear: both;
+    padding-left: 3px;
+}
+
+.story-picture{
+    height: 48px;			
+    width: 48px;
+    float:left;    
+    border-radius: 25px !important;
+    border-style:solid; 
+    border-width:1px; 
+    border-color:#4080ff;    
+    padding: 1px;        
+}
+
+.story-author{
+    font-size: 14px;
+    color: #365899;
+    padding-top: 8px;
+    padding-left: 60px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.see-more{
+    float: left;
+    margin-top:12px;
+    margin-bottom: 5px;
+    color: #637eb0;
+    font-size: 14px;
+    padding-left: 3px; 
+}
+
+.story-time{
+    font-size: 14px;
+    color: #a4a7ae;    
+    padding-left: 60px; 
+    margin-top: 0px;  
+    margin-bottom: 0px;
 }
 
 .right-column-dropdown{
@@ -625,8 +683,8 @@ hr {
 .search-elems{
     float:left; 
     
-    margin-top:5px; 
-    margin-left:4px;
+    margin-top:10px; 
+    margin-left:7px;
 }
 
 .post-link{
@@ -813,6 +871,7 @@ hr {
     margin: 2px;
     height: 46px;
     width: 46px;
+    border-radius: 23px;
 }
 
 .friends-game-arrow{
@@ -822,15 +881,23 @@ hr {
 }
 
 #friend-list{
-    padding: 5px;
+    
     padding-top: 10px; 
 }
 
-.friend-list-elem{
+.friend-list-elem{    
     width: 100%;
-    margin: 2px 0px;
-    padding: 0px;
+    margin: 0px;
+    margin-bottom: 8px;    
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     border: 0px;
+}
+
+.friend-list-elem:hover{
+    background: #dddfe2;
 }
 
 .friend-list-elem-img{
@@ -845,9 +912,26 @@ hr {
     text-align: center;
     float: left;
     margin-top:11px;
-    margin-left: 3px;
+    margin-left: 6px;
 }
 
 .friend-list-elem-time{
-    
+    font-size: 12px;
+    text-align: center;
+    float: right;
+    margin-top:13px;
+    margin-left: 3px;
+    color: #A9A9A9;
+    padding-right: 5px;
+}
+
+.friend-list-elem-online {
+    height: 8px;
+    width: 8px;
+    background-color: #42b72a;
+    border-radius: 50%;
+    float: right;
+    text-align:middle;
+    margin-top:15px;
+    margin-right: 5px;
 }

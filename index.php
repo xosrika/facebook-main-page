@@ -14,16 +14,22 @@
 			<img id="logo" src="logo1.png">
 			<div class="group search-elems" >
 				<input type="text" id="search" name="search" placeholder="Search Facebook">
-				<button id="search-button"> <img  src="search.png" style="height:20px; border:0px;"> </button>
+				<button id="search-button"> <img  src="search.png" style="height:15px; border:0px;"> </button>
 			</div>
 		</form> <!-- #left-bar -->
 		<div id="right-bar">		
-		
+			<img id="bar-dropdown" src="dropdownheader.png">
+			<img id="help" src="help.png">
+			<span class="navbar-line"></span>
 			<img id="globe" src="globe.png">
-			<img id="messages" src="messages.png">
-			<img id="friend-req" src="friends.jpg">
-			<a text-align="center">Home</a>	
-			<a text-align="center" href="index.php" style="display: block;" class="bla">Alfred</a>			
+			<img id="messages" src="messenger.png">
+			<img id="friend-req" src="friendrequest.png">
+			
+			<a text-align="center">Fiend Friends</a>
+			<span class="navbar-line"></span>
+			<a text-align="center">Home</a>
+			<span class="navbar-line"></span>	
+			<a text-align="center" href="index.php" style="display: block;" class="bla">Giorgi</a>			
 			<img id="person" src="person.jpg">
 			
 		</div> <!-- #right-bar -->
@@ -37,7 +43,7 @@
 			<a href="#">
 				<div id="user-content" class="group" style="margin-bottom: 10px">
 					<img class="left-column-picture" src="person.jpg">
-					<span style="float: left;">Alfred Lua</span>
+					<span style="float: left;">Giorgi Khosroshvili</span>
 				</div> <!-- #user column -->
 			</a>
 
@@ -303,6 +309,33 @@
 		</div> <!-- #middle-column -->
 
 		<div id="right-column" class="group">
+			
+			<div class="right-div group">
+				<p class="right-list-elem"><b>STORIES</b></p>
+
+				<div class="story group" >
+					<img class="story-picture" src="vache.jpg">
+					<p class="story-author">Vache Katsadze</p>
+					<p class="story-time" >10 hours ago</p>
+				</div>
+
+				<div class="story group">
+					<img class="story-picture" src="cero.jpg">
+					<p class="story-author">Giorgi Cercvadze</p>
+					<p class="story-time" >1 hour ago</p>
+				</div>
+
+				<div class="story group">
+					<img class="story-picture" style="border-radius:0px;" src="popkha.jpg">
+					<p class="story-author">Irakli Popkhadze</p>
+					<p class="story-time">4 hours ago</p>
+				</div>
+
+				<div class="group">
+					<img class="right-column-dropdown" src="dropdown.png" style="float:left">
+					<p class="see-more">See more</p>
+				</div>
+			</div>	<!--.right-div group-->
 
 			<div class="right-div group">
 
@@ -396,9 +429,9 @@
 						</span>	
 						<div class="friends-games-list group">
 							<img class="friends-game-arrow" src="arrow-left.png">
-							<img class="friends-game-img" src="flash-game-1.jpg">
-							<img class="friends-game-img" src="flash-game-1.jpg">
-							<img class="friends-game-img" src="flash-game-1.jpg">
+							<img class="friends-game-img" src="flash-game-4.jpg">
+							<img class="friends-game-img" src="flash-game-5.jpg">
+							<img class="friends-game-img" src="flash-game-6.jpg">
 							<img class="friends-game-arrow" src="arrow-right.png">	
 						</div><!-- #friend-games-list -->
 					</div>		
@@ -413,29 +446,42 @@
 						<div class="friends-games-list group">
 							<img class="friends-game-arrow" src="arrow-left.png">
 							<img class="friends-game-img" src="flash-game-1.jpg">
-							<img class="friends-game-img" src="flash-game-1.jpg">
-							<img class="friends-game-img" src="flash-game-1.jpg">
+							<img class="friends-game-img" src="flash-game-2.jpg">
+							<img class="friends-game-img" src="flash-game-3.jpg">
 							<img class="friends-game-arrow" src="arrow-right.png">	
 						</div><!-- #friend-games-list -->
 					</div> 		
 				</div> <!-- #friend-games -->
 				
 				<div id="friend-list">
-					<div class="friend-list-elem">
+					<div class="friend-list-elem group">
 						<img class="friend-list-elem-img" src="joe.png">
 						<span class="friend-list-elem-name">Joe Estes</span>
-						<span class="friend-list-elem-time">2 min</span>
+						<span class="friend-list-elem-time">1 min</span>
+					</div>	
+					<div class="friend-list-elem group">
+						<img class="friend-list-elem-img" src="cero.jpg">
+						<span class="friend-list-elem-name">Giorgi Cercvadze</span>
+						<span class="friend-list-elem-online"> </span>
 					</div>	
 
+					<div class="friend-list-elem group">
+						<img class="friend-list-elem-img" src="popkha.jpg">
+						<span class="friend-list-elem-name">Irakli Popkhadze</span>
+						<span class="friend-list-elem-online"> </span>
+					</div>	
+					<div class="friend-list-elem group">
+						<img class="friend-list-elem-img" src="vache.jpg">
+						<span class="friend-list-elem-name">Vache Katsadze</span>
+						<span class="friend-list-elem-time">30 min</span>
+					</div>	
+					
 
 				</div><!-- #friend-list -->		
 
 
 
 			</div><!-- #friends-column-content -->
-
-
-
 
 			<div id="friend-search" class="group">
 				
