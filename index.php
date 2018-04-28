@@ -14,7 +14,7 @@
 			<img id="logo" src="logo1.png">
 			<div class="group search-elems" >
 				<input type="text" id="search" name="search" placeholder="Search Facebook">
-				<button id="search-button"> <img  src="search.png" style="height:15px; border:0px;"> </button>
+				<button id="search-button"> <img  src="search.png" id="search-button-img"> </button>
 			</div>
 		</form> <!-- #left-bar -->
 		<div id="right-bar">		
@@ -25,11 +25,11 @@
 			<img id="messages" src="messenger.png">
 			<img id="friend-req" src="friendrequest.png">
 			
-			<a text-align="center">Fiend Friends</a>
+			<a href="index.php">Fiend Friends</a>
 			<span class="navbar-line"></span>
-			<a text-align="center">Home</a>
+			<a href="index.php">Home</a>
 			<span class="navbar-line"></span>	
-			<a text-align="center" href="index.php" style="display: block;" class="bla">Giorgi</a>			
+			<a href="index.php" >Giorgi</a>			
 			<img id="person" src="person.jpg">
 			
 		</div> <!-- #right-bar -->
@@ -41,23 +41,23 @@
 		<div id="left-column" class="group">
 
 			<a href="#">
-				<div id="user-content" class="group" style="margin-bottom: 10px">
+				<div id="user-content" class="group" >
 					<img class="left-column-picture" src="person.jpg">
-					<span style="float: left;">Giorgi Khosroshvili</span>
+					<span class="left" >Giorgi Khosroshvili</span>
 				</div> <!-- #user column -->
 			</a>
 
 			<a href="#">
 				<div id="news-feed" class="group">
 					<img class="left-column-picture" src="news-feed.jpeg">
-					<span style="float: left;" class="left-list-elem"><b>News Feed</b></span>
+					<span class="left-list-elem left"><b>News Feed</b></span>
 				</div> <!-- #news feed -->
 			</a>
 
 			<a href="#">
 				<div id="left-messages" class="group">
 					<img class="left-column-picture" src="messages-left.jpg">
-					<span style="float: left;" class="left-list-elem">Messages</span>
+					<span class="left-list-elem left">Messages</span>
 				</div><!-- #left messages -->
 			</a>
 
@@ -66,7 +66,7 @@
 
 			<ul>
 				<a href="#">				
-					<li style="clear: both;">
+					<li class="left-list-li">
 						<div>
 							<img class="left-column-picture" src="group.png"> 
 							<span class="left-list-elem">OS group</span>
@@ -75,7 +75,7 @@
 				</a>	
 
 				<a href="#">
-					<li style="clear: both;">
+					<li class="left-list-li">
 						<div>
 							<img class="left-column-picture" src="group.png">
 							<span class="left-list-elem">Frontend Stuff</span>
@@ -84,7 +84,7 @@
 				</a>
 
 				<a href="#">
-					<li style="clear: both;">
+					<li class="left-list-li">
 						<div>
 							<img class="left-column-picture" src="group.png"> 
 							<span class="left-list-elem">Korkot Mishvele</span>
@@ -98,7 +98,7 @@
 
 			<ul>				
 				<a href="#">
-					<li style="clear: both;">
+					<li class="left-list-li">
 						<div>
 							<img class="left-column-picture" src="pages.jpg"> 
 							<span class="left-list-elem">Pages</span>
@@ -108,7 +108,7 @@
 
 
 				<a href="#">
-					<li style="clear: both;">
+					<li class="left-list-li">
 						<div>
 							<img class="left-column-picture" src="group.png">				 
 							<span class="left-list-elem">Groups</span>
@@ -118,7 +118,7 @@
 
 
 				<a href="#">
-					<li style="clear: both;">
+					<li class="left-list-li">
 						<div>
 							<img class="left-column-picture" src="events.png"> 
 							<span class="left-list-elem">Events</span>
@@ -128,7 +128,7 @@
 
 
 				<a href="#">
-					<li style="clear: both;">
+					<li class="left-list-li">
 						<div>
 							<img class="left-column-picture" src="friends-list.jpg"> 
 							<span class="left-list-elem">Friends List</span>	
@@ -137,10 +137,10 @@
 				</a>
 
 				<a href="#">
-					<li style="clear: both;">
+					<li class="left-list-li">
 						<div>
 							<img class="left-column-picture" src="dropdown.png"> 
-							<span style="color: blue;" class="left-list-elem">See More...</span>
+							<span class="left-list-elem left-column-more-color">See More...</span>
 						</div>
 					</li>
 				</a>
@@ -166,22 +166,32 @@
 			<form id="post-form" class="group">
 				<ul class="group">	
 					<a href="#">				
-						<li class="form-header"style="color: #4b4f56;">
+						<li class="form-header form-header-active">
 							<img class="middle-column-picture" src="create-page.png"> 
 							<b class="middle-list-elem">Create a Post</b>
 						</li>
 					</a>	
 					
-					<li style="float:left;">
+					<li class="form-header">
 						<span class="border"> </span> 
 					</li>
 
 					<a href="#">
-						<li class="form-header"style="color: #5471a8">
+						<li class="form-header">
 							<img class="middle-column-picture" src="album.png"> 
 							<b class="middle-list-elem">Photo/Video Album</b>
 						</li>
-					</a>	
+					</a>
+					<li class="form-header">
+						<span class="border"> </span> 
+					</li>
+
+					<a href="#">
+						<li class="form-header">
+							<img class="middle-column-picture" src="live.png"> 
+							<b class="middle-list-elem">Live Video</b>
+						</li>
+					</a>		
 				</ul>	
 
 				<div id="main-form" class="group">
@@ -194,14 +204,14 @@
 					<a href="#">
 						<span class="form-bottom group">
 							<img class="middle-column-picture" src="camera.png"> 
-							<span class="middle-list-elem" style="margin-top: 6px;"><b>Photo/Video</b></span>
+							<span class="middle-list-elem" ><b>Photo/Video</b></span>
 						</span>
 					</a>	
 
 					<a href="#">
 						<span class="form-bottom group">
 							<img class="middle-column-picture" src="smile.png"> 
-							<span class="middle-list-elem" style="margin-top: 6px;"><b>Emotion</b></span>
+							<span class="middle-list-elem" ><b>Emotion</b></span>
 						</span>
 					</a>	
 
@@ -213,7 +223,7 @@
 
 			<div id="middle-content"> 
 				<div class="post group">
-					<div class="group" style="margin-bottom: 5px;">
+					<div class="group post-header post-elem">
 						<img class="post-person-img" src="person.jpg">
 
 						<p class="post-title-paragraph">
@@ -225,20 +235,96 @@
 						Hello there!</p>	
 					</div>
 
-					<div>	
+					<div class="post-elem">	
 						<img class="post-photo" src="bird.jpg">
 					</div>
-					<div>
+					<div class="post-elem post-footer group">
 						
 						<span class="post-comment-and-shares">29 comments 82 shares</span>
 						<hr>
-						<span class="post-action"> Like </span>
-						<span class="post-action"> Share </span>
-						<span class="post-action"> Comment </span> 
-					</div>						
+						<div class="post-actions ">
+							<span class="post-action"> Like </span>
+							<span class="post-action"> Share </span>
+							<span class="post-action"> Comment </span> 
+						</div>
+					</div>
+
+					<div class="comments group post-elem">
+						<div class="comments-header group">
+							<span class="left">7 Likes</span>
+							<span class="right">Seen by 20</span>
+						</div>
+						<hr>
+						<div class="comment group">
+							<img class="comment-person-image" src="person.jpg">
+							<span class="comment-text group"> 
+								<span class="comment-text-author">Someone</span>	
+								I Love this bird <3
+							</span>
+							<div class="group comment-actions">								
+								<span>Like</span>
+								<span class="comment-dot"></span>
+								<span>Reply</span>
+								<span class="comment-dot"></span>
+								<span>1 hour</span>
+							</div>
+						</div><!--comment-->
+
+						<div class="comment group">
+							<img class="comment-person-image" src="popkha.jpg">
+							<span class="comment-text group"> 
+								<span class="comment-text-author">Irakli Popkhadze</span>	
+								რა ჩიტია, რა ჩიტი.
+							</span>
+							<div class="group comment-actions">								
+								<span>Like</span>
+								<span class="comment-dot"></span>
+								<span>Reply</span>
+								<span class="comment-dot"></span>
+								<span>30 min</span>
+							</div>
+						</div><!--comment-->
+						<div class="comment group">
+							<img class="comment-person-image" src="vache.jpg">
+							<span class="comment-text group"> 
+								<span class="comment-text-author">Vache Katsadze</span>	
+								ჩიტო გვრიტო, მარგალიტო.
+							</span>
+							<div class="group comment-actions">								
+								<span>Like</span>
+								<span class="comment-dot"></span>
+								<span>Reply</span>
+								<span class="comment-dot"></span>
+								<span>20 min</span>
+							</div>
+						</div><!--comment-->
+						<div class="comment group">
+							<img class="comment-person-image" src="cero.jpg">
+							<span class="comment-text group"> 
+								<span class="comment-text-author">Giorgi Cercvadze</span>	
+								რა ჩიტი აგიტყდათ ამხელა ხალხს.
+							</span>
+							<div class="group comment-actions">								
+								<span>Like</span>
+								<span class="comment-dot"></span>
+								<span>Reply</span>
+								<span class="comment-dot"></span>
+								<span>10 min</span>
+							</div>
+						</div><!--comment-->
+
+						<div class="comment group">
+							<img class="comment-person-image" src="person.jpg">
+							<span class="comment-write group"> 
+								<input type="text" class="comment-write-input" name="friend-search" placeholder="Write a comment">
+							</span>
+							
+						</div><!--comment-->
+					</div> <!--comments-->
+
 				</div> <!-- .post -->
 				<div class="post group">
-					<div class="group" style="margin-bottom: 5px;">
+					<div class="group post-header post-elem" >
 						<img class="post-person-img" src="mark.jpg">
 
 						<p class="post-title-paragraph">
@@ -255,18 +341,20 @@
 						</p>	
 					</div>
 					
-					<div>
+					<div class="post-elem post-footer group">
 						
 						<span class="post-comment-and-shares">132451 comments 12313 shares</span>
 						<hr>
-						<span class="post-action"> Like </span>
-						<span class="post-action"> Share </span>
-						<span class="post-action"> Comment </span> 
+						<div class="post-actions">
+							<span class="post-action"> Like </span>
+							<span class="post-action"> Share </span>
+							<span class="post-action"> Comment </span> 
+						</div>
 					</div>						
 				</div> <!-- .post -->
 
 				<div class="post group">
-					<div class="group" style="margin-bottom: 5px;">
+					<div class="group post-header post-elem">
 						<img class="post-person-img" src="jeffbezos.jpg">
 
 						<p class="post-title-paragraph">
@@ -278,32 +366,36 @@
 						Check out Amazon.com</p>	
 					</div>
 
-					<a href="https://www.amazon.com/">
-						<div class="post-link group">
-							<img class="post-photo" src="amazon.jpg">
-							
-							<div >
-								<h2 class="post-link-title">Amazon!</h2>
-								<p class="post-link-text">
-									Biggest only shop in the world.
-									Here you can buy anything from aroud the globe. We will make 
-									sure that yoju will get your product fast and safe.
-									Always to help you.
-								</p>
-								<p class="post-link-address"> AMAZON.COM </p>
-							</div>	
-							
-						</div>
-					</a>
+					<div class="post-elem">
+						<a href="https://www.amazon.com/" >
+							<div class="post-link group">
+								<img class="post-photo" src="amazon.jpg">
+								
+								<div >
+									<h2 class="post-link-title">Amazon!</h2>
+									<p class="post-link-text">
+										Biggest only shop in the world.
+										Here you can buy anything from aroud the globe. We will make 
+										sure that yoju will get your product fast and safe.
+										Always to help you.
+									</p>
+									<p class="post-link-address"> AMAZON.COM </p>
+								</div>	
+								
+							</div>
+						</a>
+					</div>
 						
-					<div>
+					<div class="post-elem post-footer group">
 						
 						<span class="post-comment-and-shares">32124 comments 523213 shares</span>
 						<hr>
-						<span class="post-action"> Like </span>
-						<span class="post-action"> Share </span>
-						<span class="post-action"> Comment </span> 
-					</div><!-- .post-lick -->						
+						<div class="post-actions group">
+							<span class="post-action"> Like </span>
+							<span class="post-action"> Share </span>
+							<span class="post-action"> Comment </span> 
+						</div>
+					</div>					
 				</div> <!-- .post -->
 			</div> <!-- #middle-content -->	
 		</div> <!-- #middle-column -->
@@ -326,13 +418,13 @@
 				</div>
 
 				<div class="story group">
-					<img class="story-picture" style="border-radius:0px;" src="popkha.jpg">
+					<img class="story-picture"  src="popkha.jpg">
 					<p class="story-author">Irakli Popkhadze</p>
 					<p class="story-time">4 hours ago</p>
 				</div>
 
 				<div class="group">
-					<img class="right-column-dropdown" src="dropdown.png" style="float:left">
+					<img class="right-column-dropdown left" src="dropdown.png" >
 					<p class="see-more">See more</p>
 				</div>
 			</div>	<!--.right-div group-->
@@ -347,12 +439,12 @@
 					<img class="right-column-buffer" src="buffer.png">
 					<button id="buffer-button">Buffer</button> 
 					<p class="right-column-buffer-text">20+ Messages</p>
-					<img class="right-column-dropdown" style="margin-top:3px;" src="dropdown.png">
+					<img class="right-column-dropdown-buffer" src="dropdown.png">
 				</div><!-- your pages -->
 				<hr>
 
 				<p class="right-list-elem" >Create an Event for Your Page</p>
-				<div style="clear: both;" class="group">
+				<div class="group alone-line">
 					<img class="event-picture"  src="calendar.png">
 					<p class="right-list-sub-elem" > 
 					Make it easy for people to find your event. Create it on Facebook.</p>
@@ -362,11 +454,11 @@
 				<hr>
 
 				<p class="right-list-elem" >Leatest Unread Message</p>
-				<p class="right-list-elem" style="float: right;" >8 hours ago</p>
+				<p class="right-list-elem right">8 hours ago</p>
 
-				<div style="clear: both;" class="group">
-					<img class="event-picture" style="border-radius:0px;" src="joe.png">
-					<p class="right-list-sub-elem" style="font-size: 14px; color:grey;"> 
+				<div  class="group alone-line">
+					<img class="event-picture" src="joe.png">
+					<p class="right-list-sub-elem-name"> 
 					Joe Estes</p>
 					<p class="right-list-sub-elem" > 
 					Which FB Page Templete did you use to...</p>
@@ -376,7 +468,7 @@
 
 				<p class="right-list-elem" >This weak</p>
 			
-				<div class="group" style="clear:both">
+				<div class="group alone-line">
 					<p class="right-list-sub-elem post-count" >55,995</p>
 					<p class="right-list-sub-elem post-count" >3,795</p>
 					<p class="right-list-sub-elem post-count-name" >Post Reach</p>
@@ -388,8 +480,8 @@
 				<p class="right-list-elem" >Recent Posts</p>
 
 				<div id="recent-posts">
-					<div class="group" style="clear:both">
-						<div  class="group" style="clear:both;">
+					<div class="group alone-line" >
+						<div  class="group alone-line">
 							<img class="left-post-logo" src="recent-post.jpg">
 							<a href="#">
 									<p class="right-list-sub-elem right-list-post-link">
@@ -400,8 +492,8 @@
 						<button class="boost-button">Boost Post</button>
 					</div>
 
-					<div class="group" style="clear:both">
-						<div  class="group" style="clear:both;">
+					<div class="group alone-line">
+						<div  class="group alone-line">
 							<img class="left-post-logo" src="recent-post.jpg">
 							<a href="#">
 								<p class="right-list-sub-elem right-list-post-link">
@@ -485,15 +577,15 @@
 
 			<div id="friend-search" class="group">
 				
-				<button class="search-friend-button"> 
+				<button class="search-friend-button-glass"> 
 					<img class="search-button" src="search.png"> 
 				</button>
 				
 				
-				<input type="text" id="friend-search" name="friend-search" placeholder="Search" style="width:50px;">
+				<input type="text" id="friend-search-area" name="friend-search" placeholder="Search">
 
-				<button class="search-friend-button" style="float:right; margin-right:12px;"> 
-					<img class="search-button" style="float:right" src="cog.png"> 
+				<button class="search-friend-button-cog" > 
+					<img class="search-button right"  src="cog.png"> 
 				</button>				
 				
 			</div><!-- #friend-search -->
